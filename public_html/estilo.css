@@ -1,0 +1,14 @@
+/* 
+    Created on : 15-oct-2014, 15:22:34
+    Author     : Pedro Gabriel Manrique Gutiérrez
+*/
+.titulo{
+    color: #09f;
+}
+#posicion{
+    padding: 5px;
+}
+#pagina{
+    width: 800px; 
+    margin: 10px auto;
+}

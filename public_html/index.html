@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saca Letra NIF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript">
+            
+            function sacaLetra(){
+                var letras = ['A','B','C', 'D', 'E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','V','W','X','Y','Z'];    
+                
+                var pregunta = prompt("Introduce DNI LETRA en Mayúsculas "); 
+                
+                var letra = pregunta.slice(-1);
+                
+                var posicion = letras.indexOf(letra);
+                var posicion = posicion + 1;
+                document.getElementById("posicion").innerHTML = "La letra de tu DNI " 
+                        +letra + " está en la posición " + posicion;
+            }
+            
+        </script> 
+        <style>
+            
+        </style>
+    </head>
+    <body onload="sacaLetra()">
+        <div class="pagina">
+            <h1 class="titulo">Saca Letra NIF</div>
+            <div id="posicion"></div>
+        </div>
+    </body>
+</html>
